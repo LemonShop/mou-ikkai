@@ -13,6 +13,7 @@ function init() {
 		.to({ alpha: 1, y: 150 }, 500, createjs.Ease.getPowInOut(2))
 		.to({ x: 100 }, 800, createjs.Ease.getPowInOut(2));
 
+	createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
 	createjs.Ticker.setFPS(60);
 	createjs.Ticker.addEventListener("tick", stage);		
 }
