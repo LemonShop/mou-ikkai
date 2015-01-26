@@ -16,10 +16,11 @@ function init() {
 	loadBackGround( );
 
 
-	var rinSD = new createjs.Bitmap("img/RinSD.png");
-	rinSD.x = 100;
-	rinSD.y = 150;
+	var rinSD = new createjs.Bitmap("img/RinSD flipped.png");
+	rinSD.x = 300;
+	rinSD.y = 125;
 	rinSD.alpha = 0;
+	rinSD.scaleX = 1;
 	stage.addChild(rinSD);
 
 	loadSound();
